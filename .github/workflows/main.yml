@@ -1,0 +1,9 @@
+- name: Cloudflare Page Deploy
+  uses: Cyb3r-Jak3/actions-cloudflare-pages@v1.0.1
+  with:
+    account: ${{secrets.CF_ACCOUNT_ID}}
+    # Name of the project to deploy. The repo/account must have been authorized through the Pages UI dash before
+    project: pozdro
+    # The email address you registered your Cloudflare account with.
+    email: ${{ secrets.email}}
+    global_token: ${{ secrets.CF_GLOBAL_TOKEN}}
